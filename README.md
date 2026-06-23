@@ -63,7 +63,6 @@ INICIO: LOCO 50
         STOD contador
         LOCO 1
         ADDD contador
-        JUMP INICIO
 
 
 O que observar:
