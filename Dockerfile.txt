@@ -1,0 +1,11 @@
+# Usa a imagem oficial do Java 22 (Eclipse Temurin é a distribuição padrão atual)
+FROM eclipse-temurin:22-jre
+
+# Define a pasta de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copia o nosso JAR para dentro do contêiner
+COPY SimuladorMIC1.jar /app/
+
+# Comando que será executado quando o contêiner iniciar
+CMD ["java", "-jar", "SimuladorMIC1.jar"]
